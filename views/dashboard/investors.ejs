@@ -1,0 +1,173 @@
+<%- include('../shared/dashboard/header') -%>
+<section id="ticker-row">
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"
+            async>
+                {
+                    "symbols": [
+                        {
+                            "description": "SPDR S&P 500 ETF TRUST",
+                            "proName": "AMEX:SPY"
+                        },
+                        {
+                            "description": "NASDAQ INC",
+                            "proName": "NASDAQ:NDAQ"
+                        },
+                        {
+                            "description": "CRUDE OIL",
+                            "proName": "TVC:USOIL"
+                        },
+                        {
+                            "description": "BITCOIN",
+                            "proName": "BTC"
+                        }
+                    ],
+                        "colorTheme": "light",
+                            "isTransparent": false,
+                                "locale": "en"
+                }
+            </script>
+    </div>
+</section>
+<main id="bots-section">
+    <section class="long-term">
+      <h2>Long Term Holds</h2>
+      <div class="sweep-bubble" style="text-transform: uppercase;">
+        <p>time</p>
+        <p>ticker</p>
+        <p>type</p>
+        <p>date</p>
+        <p>price</p>
+      </div>
+      <div class="sweep-data">
+        <div class="sweep-bubble" style="background: rgba(0, 87, 0, 0.822); color: white;">
+          <p class="time">11:38AM</p>
+          <p class="ticker">RIOT</p>
+          <p class="type">STOCK</p>
+          <p class="date">03/19/21</p>
+          <p class="price">$10</p>
+        </div>
+        <div class="sweep-bubble" style="background: rgba(255, 0, 0, 0.2);">
+          <p class="time">11:38AM</p>
+          <p class="ticker">RIOT</p>
+          <p class="type">PUT</p>
+          <p class="date">03/19/21</p>
+          <p class="price">$4</p>
+        </div>
+        <div class="sweep-bubble" style="background: rgba(0, 255, 0, 0.2);">
+          <p class="time">11:38AM</p>
+          <p class="ticker">RIOT</p>
+          <p class="type">CALL</p>
+          <p class="date">03/19/21</p>
+          <p class="price">$4</p>
+        </div>
+        <div class="sweep-bubble" style="background: rgba(0, 87, 0, 0.822); color: white;">
+          <p class="time">11:38AM</p>
+          <p class="ticker">RIOT</p>
+          <p class="type">STOCK</p>
+          <p class="date">03/19/21</p>
+          <p class="price">$10</p>
+        </div>
+        <div class="sweep-bubble" style="background: rgba(255, 0, 0, 0.2);">
+          <p class="time">11:38AM</p>
+          <p class="ticker">RIOT</p>
+          <p class="type">PUT</p>
+          <p class="date">03/19/21</p>
+          <p class="price">$4</p>
+        </div>
+        <div class="sweep-bubble" style="background: rgba(0, 255, 0, 0.2);">
+          <p class="time">11:38AM</p>
+          <p class="ticker">RIOT</p>
+          <p class="type">CALL</p>
+          <p class="date">03/19/21</p>
+          <p class="price">$4</p>
+        </div>
+    </section>
+    <section class="overview">
+      <h2>Overview</h2>
+      <div id="piechart"></div>
+    </section>
+    <section class="short-term">
+      <h2>Short Term Holds</h2>
+      <div class="sweep-bubble" style="text-transform: uppercase;">
+        <p>time</p>
+        <p>ticker</p>
+        <p>type</p>
+        <p>date</p>
+        <p>price</p>
+      </div>
+      <div class="sweep-data">
+        <div class="sweep-bubble" style="background: #005700d2; color: white;">
+          <p class="time">11:38AM</p>
+          <p class="ticker">RIOT</p>
+          <p class="type">STOCK</p>
+          <p class="date">03/19/21</p>
+          <p class="price">$10</p>
+        </div>
+        <div class="sweep-bubble" style="background: rgba(255, 0, 0, 0.2);">
+          <p class="time">11:38AM</p>
+          <p class="ticker">RIOT</p>
+          <p class="type">PUT</p>
+          <p class="date">03/19/21</p>
+          <p class="price">$4</p>
+        </div>
+        <div class="sweep-bubble" style="background: rgba(0, 255, 0, 0.2);">
+          <p class="time">11:38AM</p>
+          <p class="ticker">RIOT</p>
+          <p class="type">CALL</p>
+          <p class="date">03/19/21</p>
+          <p class="price">$4</p>
+        </div>
+        <div class="sweep-bubble" style="background: rgba(0, 87, 0, 0.822); color: white;">
+          <p class="time">11:38AM</p>
+          <p class="ticker">RIOT</p>
+          <p class="type">STOCK</p>
+          <p class="date">03/19/21</p>
+          <p class="price">$10</p>
+        </div>
+        <div class="sweep-bubble" style="background: rgba(255, 0, 0, 0.2);">
+          <p class="time">11:38AM</p>
+          <p class="ticker">RIOT</p>
+          <p class="type">PUT</p>
+          <p class="date">03/19/21</p>
+          <p class="price">$4</p>
+        </div>
+        <div class="sweep-bubble" style="background: rgba(0, 255, 0, 0.2);">
+          <p class="time">11:38AM</p>
+          <p class="ticker">RIOT</p>
+          <p class="type">CALL</p>
+          <p class="date">03/19/21</p>
+          <p class="price">$4</p>
+        </div>
+    </section>
+  </main>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+['Type', 'Total'],
+['Stock', 2500],
+['Calls', 500],
+['Puts', 250],
+]);
+
+// Optional; add a title and set the width and height of the chart
+var options = {
+  width:550, 
+  height:400,
+  colors: ['#005700', '#00aa00', '#ec8f6e']
+  };
+
+// Display the chart inside the <div> element with id="piechart"
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);
+}
+</script>
+<%- include('../shared/dashboard/footer') -%>

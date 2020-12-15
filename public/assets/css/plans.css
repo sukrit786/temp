@@ -1,0 +1,210 @@
+html, body, pre, code, kbd, samp, input, button, select, optgroup, textarea, .tooltip, .popover {
+    font-family: 'Open Sans', sans-serif;
+}
+
+div h1 {
+    font-size: 3rem;
+}
+
+body {
+    background: rgb(242,202,82);
+    background: linear-gradient(90deg, rgba(242,202,82,1) 0%, rgba(217,164,65,1) 35%, rgba(191,117,52,1) 100%);
+}
+
+img.logo {
+    max-height: 30px;
+}
+
+.btn {
+    border: 2px solid #D9A441;
+    background-color: #D9A441;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 1px;
+    padding: 7px 30px;
+}
+
+.btn-second {
+    background-color: black;
+}
+
+.btn:hover {
+    background-color: #F2CA52;
+    color: white;
+}
+
+.btn:active {
+    background-color: #D9A441;
+    color: white;
+}
+
+.bar {
+    background: rgb(242,202,82);
+    background: linear-gradient(90deg, rgba(242,202,82,1) 0%, rgba(217,164,65,1) 35%, rgba(191,117,52,1) 100%);
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    padding: 3px 0px;
+}
+div.heading {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(19,19,19,1) 100%);
+    height: 300px;
+}
+
+div.plans {
+    padding: 50px 0px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+div.title {
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    background: #131313;
+    color: white;
+    padding: 30px 0px 10px 0px;
+}
+
+div.plan {
+    background: #ededed;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+div.col-cell {
+    border-bottom: 1px solid lightgray;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+div.features {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+div.basic, div.premium {
+    width: 30%;
+    max-width: 200px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+div.basic img, div.premium img {
+    margin: 0 auto;
+    max-width: 30px;
+}
+
+div.basic h4, div.premium h4 {
+    margin: 0 auto;
+}
+
+div.basic h3, div.premium h3 {
+    margin: 0 auto;
+}
+
+div.basic button, div.premium button {
+    margin: 0 auto;
+}
+
+div.basic p, div.premium p {
+    margin: 0 auto;
+}
+
+.btn {
+    border: 2px solid #D9A441;
+    background-color: #D9A441;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 1px;
+    padding: 7px 15px;
+}
+
+.btn-second {
+    background-color: black;
+}
+
+.btn:hover {
+    background-color: #F2CA52;
+    color: white;
+}
+
+.btn:active {
+    background-color: #D9A441;
+    color: white;
+}
+
+@media only screen and (max-width : 1000px) {
+
+    div.plans {
+        padding: 0;
+    }
+
+    div.title, div.plan {
+        border-radius: 0px;
+    }
+
+}
+
+@media only screen and (max-width : 767px) {
+
+    .nav-item:first-of-type {
+        margin-top: 10px;
+    }
+
+    .nav-item{
+        text-align: center;
+        padding: 10px 0px;
+        background: #333333;
+    }
+
+    .navbar {
+        padding-bottom: 13px;
+    }
+
+}
+
+@media only screen and (max-width : 500px) {
+    div.heading {
+        height: 250px;
+    }
+    div.title p {
+        display: none;
+    }
+    div.title h2 {
+        font-size: 1.5rem;
+    }
+    div.basic h4, div.premium h4 {
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+    
+    div.basic h3, div.premium h3 {
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+    div.basic img, div.premium img {
+        max-width: 15px;
+    }
+    div.basic button, div.premium button {
+        font-size: .5rem;
+    }
+    div.col-cell {
+        font-size: .8rem;
+    }
+    body {
+        background: #ededed;
+    }
+    
+}

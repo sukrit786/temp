@@ -1,0 +1,285 @@
+html, body, pre, code, kbd, samp, input, button, select, optgroup, textarea, .tooltip, .popover {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #ededed;
+}
+
+#bots-section {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.search {
+    max-width: 1854px;
+    margin: 0 auto;
+}
+
+#ticker-row {
+    max-width: 1760px;
+    margin: 0 auto;
+}
+
+img.logo {
+    max-height: 30px;
+}
+
+.search {
+    margin-top: 20px;
+}
+
+.search > form input {
+    min-width: 95%;
+    max-width: 95%;
+    position: relative;
+    left: 8px;
+}
+
+.search > form img {
+    max-height: 15px;
+    position: relative;
+    left: -25px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.row {
+    margin-left: 9px;
+    max-width: 99%;
+}
+
+.col, [class*="col-"] {
+    margin-bottom: 30px;
+    resize: both;
+    overflow: auto;
+}
+
+.mid-large-cap {
+    grid-area: one;
+}
+
+.small-cap {
+    grid-area: two;
+}
+
+.third-cap {
+    grid-area: three;
+}
+
+.option-sweeps {
+    grid-area: four;
+}
+
+.dark-pool-prints {
+    grid-area: five;
+}
+
+.midas-chat {
+    grid-area: six;
+}
+
+#bots-section > section {
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 220px;
+}
+
+.btn {
+    background-color: #D9A441;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 1px;
+    border: none;
+    padding: 7px 20px;
+}
+
+.btn:hover {
+    background-color: #F2CA52;
+    color: white;
+}
+
+.btn:active {
+    background-color: #D9A441;
+    color: white;
+}
+
+.bar {
+    background: rgb(242,202,82);
+    background: linear-gradient(90deg, rgba(242,202,82,1) 0%, rgba(217,164,65,1) 35%, rgba(191,117,52,1) 100%);
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    padding: 3px 0px;
+}
+
+#ticker-row {
+    text-align: center;
+    padding-bottom: 18px;
+    width: 100%;
+}
+
+#bots-section {
+    padding: 0px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "one four four six"
+    "one four four six"
+    "two four four six"
+    "two five five six"
+    "three five five six"
+    "three five five six";
+    gap: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #bots-section {
+        grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+        grid-template-areas:
+        "one four"
+        "one four"
+        "two four"
+        "two five"
+        "three five"
+        "three five"
+        "six six";
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    #bots-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six";
+    }
+
+}
+
+
+
+.chat {
+    grid-row: 1/3;
+}
+
+.mid-large-data {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+.bubble {
+    display: flex;
+    justify-content: space-evenly;
+    background: #F2B705;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.bubble:nth-child(odd) {
+    background: #D9A441;
+}
+
+.bubble > p {
+    position: relative;
+    top:8px;
+    font-size: .8rem;
+    text-align: center;
+    width: 25%;
+}
+
+.sweep-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.sweep-bubble {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.sweep-bubble > p {
+    position: relative;
+    top:8px;
+    font-size: .8rem;
+    text-align: center;
+    width: 14%;
+}
+
+.dp-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.dp-bubble {
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba(255,255,255,.6);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.dp-bubble:nth-child(odd) {
+    background: rgba(255,255,255,.8);
+}
+
+.dp-bubble > p {
+    position: relative;
+    top:8px;
+    font-size: .8rem;
+    text-align: center;
+    width: 25%;
+}
+
+@media only screen and (max-width : 767px) {
+
+    .nav-item:first-of-type {
+        margin-top: 10px;
+    }
+
+    .nav-item{
+        text-align: center;
+        padding: 10px 0px;
+        background: #333333;
+    }
+
+    .navbar {
+        padding-bottom: 13px;
+    }
+
+    .row {
+        margin-left: 0px;
+    }
+
+    .mid-large-data,
+    .sweep-data,
+    .dp-data {
+        max-height: 220px;
+        overflow: scroll;
+    }
+
+    .sweep-bubble > p {
+        font-size: .6rem;
+    }
+
+}

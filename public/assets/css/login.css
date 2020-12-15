@@ -1,0 +1,203 @@
+body {
+    background: url("../images/bg_main.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.loginbox {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100%;
+    background: #000;
+    color: #fff;
+    padding: 35px 30px;
+    text-align: center;
+
+}
+
+.logo {
+    max-width: 200px;
+}
+
+form {
+    margin: 0 auto;
+}
+
+.tos {
+    display: flex;
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="email"],
+input[type="password"],
+input[type="username"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #D9A441;
+    color: #fff;
+    font-size: 18px;
+    transition-duration: 750ms;
+    text-decoration: underline;
+}
+
+.loginbox input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc817;
+    color: #000;
+
+
+}
+
+.loginbox input[type="button"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #9BB0E5;
+    color: #fff;
+    font-size: 18px;
+    transition-duration: 750ms;
+    text-decoration: underline;
+
+}
+
+.loginbox input[type="button"]:hover {
+    cursor: pointer;
+    background: #7289DA;
+    color: #000;
+
+}
+
+.loginbox input[type="checkbox"] {
+    max-width: 30px;
+}
+
+p {
+    color: gray;
+}
+
+.loginbox a {
+    line-height: 20px;
+    color: white;
+}
+
+.loginbox a:hover {
+    cursor: pointer;
+    color: #D9A441;
+    text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.button {
+    border: 1px solid #D9A441;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.button.golden {
+    border-color: #D9A441;
+    background-color: #D9A441;
+}
+
+.button.discordy {
+    border-color: #7289da;
+    background: #7289da;
+    margin-bottom: 20px;
+}
+
+.button.golden:hover {
+    background-color: #000;
+    color: white;
+}
+
+.button.discordy:hover {
+    background-color: #000;
+}
+
+.message {
+    font-size: 0.6em;
+    position: relative;
+    bottom: 10px;
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+.warning {
+    color: #D9A441;
+}
+
+input[type="checkbox"] {
+    color: #D9A441;
+}
+
+.button[disabled] {
+    border-color: lightgray;
+
+}
+
+.button[disabled]:hover {
+    border-color: black;
+    background: gray;
+    color: white;
+}
+
+label {
+    width: 100%;
+}
+
+.acct {
+    font-size: 4.5vw;
+}
+
+.terms {
+    font-size: 3.5vw;
+}
+
+@media only screen and (min-width: 380px) {
+    .loginbox {
+        max-width: 380px;
+    }
+
+    .acct {
+        font-size: 1.1rem;
+    }
+
+    .terms {
+        font-size: .8rem;
+    }
+
+}

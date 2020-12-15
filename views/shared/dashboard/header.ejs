@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midas Circle: Dashboard</title>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <!-- Local css -->
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+    <link rel="stylesheet" href="assets/css/account-details.css">
+    <!-- Google font import -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,400;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #131313">
+            <img class="logo" src="assets/logos/midas-logo.png" alt="Midas Circle Logo" />
+            <a href="/dashboard" class="navbar-brand">Midas Circle</a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav justify-content-end">
+                    <a href="/dashboard" class="nav-item nav-link active">Dashboard</a>
+                    <a href="/investors" class="nav-item nav-link">Investors</a>
+                    <a href="/account" class="nav-item nav-link">My Account</a>
+                    <a href="/logout" class="nav-item nav-link">Logout</a>
+                </div>
+            </div>
+        </nav>
+        <div class="bar"></div>
+        <div class="search">
+            <form class="form-inline justify-content-center">
+                <input class="form-control" type="search" placeholder="Search..." />
+                <img src="assets/images/search.svg" alt="search icon" />
+            </form>
+        </div>
+    </header>

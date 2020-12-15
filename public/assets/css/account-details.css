@@ -1,0 +1,328 @@
+@import 'styles/nav.css';
+
+html, body, pre, code, kbd, samp, input, button, select, optgroup, textarea, .tooltip, .popover {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #ededed;
+}
+
+img.logo {
+    max-height: 30px;
+}
+
+.search {
+    margin-top: 20px;
+}
+
+form input {
+    width: 90%;
+    position: relative;
+}
+
+form img {
+    max-height: 15px;
+    position: relative;
+    left: -25px;
+}
+
+label {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.row {
+    margin-left: 9px;
+    max-width: 99%;
+}
+
+.col, [class*="col-"] {
+    margin-bottom: 30px;
+    resize: both;
+    overflow: auto;
+}
+
+.btn {
+    background-color: #D9A441;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 1px;
+    border: none;
+    padding: 7px 20px;
+    max-width: 120px;
+}
+
+.btn:hover {
+    background-color: #F2CA52;
+    color: white;
+}
+
+.btn:active {
+    background-color: #D9A441;
+    color: white;
+}
+
+.bar {
+    background: rgb(242,202,82);
+    background: linear-gradient(90deg, rgba(242,202,82,1) 0%, rgba(217,164,65,1) 35%, rgba(191,117,52,1) 100%);
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    padding: 3px 0px;
+    margin-bottom: 15px;
+}
+
+#account-settings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px 7px;
+}
+
+section.bot-container {
+    flex-grow: 1;
+    height: 380px;
+    margin: 0px 10px 20px 10px;
+}
+
+thead {
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+thead tr {
+    font-size: 10px;
+}
+
+tr {
+    font-size: max(13px);
+}
+
+tr.big-sweep {
+    border-bottom: 2px solid #F2B705;
+}
+
+tr.weird-sweep{
+    border-bottom: 2px solid #009DFF;
+}
+
+table {
+    text-align: left;
+    max-height: 280px;
+}
+
+@media only screen and (max-width : 767px) {
+
+    .nav-item:first-of-type {
+        margin-top: 10px;
+    }
+
+    .nav-item{
+        text-align: center;
+        padding: 10px 0px;
+        background: #333333;
+    }
+
+    .navbar {
+        padding-bottom: 13px;
+    }
+
+    .row {
+        margin-left: 0px;
+    }
+
+    .bot-container {
+        width: 96%;
+    }
+
+}
+
+@media only screen and (max-width : 540px) {
+
+    body {
+        background-color: white;
+    }
+
+    .container {
+        width: 100%;
+        left: -20px;
+        top: -45px;
+    }
+
+    .leftbox {
+        left: -100px;
+        min-height: 100vh;
+    }
+
+    #account-settings {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    input[type=checkbox] {
+        margin: 0px;
+        background-color: red;
+    }
+
+}
+
+/* This is where the other code starts */
+
+  .container {
+    background: #fff;
+    width: 540px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 20px;
+  }
+  
+  .leftbox {
+    float: left;
+    top: -20px;
+    left: 20px;
+    position: absolute;
+    width: 15%;
+    height: 110%;
+    background: rgb(242,202,82);
+    background: linear-gradient(90deg, rgba(242,202,82,1) 0%, rgba(217,164,65,1) 35%, rgba(191,117,52,1) 100%);
+    padding-right: 84px;
+  }
+  
+  nav.settings a {
+    list-style: none;
+    padding: 35px;
+    color: #fff;
+    font-size: 1.1em;
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav.settings a:hover {
+    color: #131313;
+    cursor: pointer;
+  }
+  
+  nav.settings a:first-child {
+    margin-top: 7px;
+  }
+  
+  .rightbox {
+    margin-left: 120px;
+  }
+  
+  .profile,
+  .payment,
+  .subscription,
+  .privacy,
+  .settings {
+    transition: all 0.5s ease-in;
+    position: absolute;
+    width: 50%;
+  }
+  
+  h1 {
+    color: #D9A441;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+  
+  label {
+    color: #777;
+    text-transform: uppercase;
+    font-size: .6rem;
+    letter-spacing: 1px;
+    margin-left: 2px;
+    margin-top: 10px;
+  }
+  
+  input,
+  p {
+    border: 0;
+    border-bottom: 1px solid #D9A441;
+    width: 100%;
+    font-size: 1em;
+    padding-bottom: 7px 0;
+    color: #070707;
+    outline: none;
+    line-height: 1;
+  }
+  
+  span {
+    font-size: 0.7em;
+    color: #777;
+  }
+  
+  .btn {
+    text-transform: uppercase;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    background: #D9A441;
+    padding: 7px 15px;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-top: 15px;
+    max-width: 150px;
+  }
+
+  .tabShow {
+    display: none;
+  }
+
+
+  /*checkbox styling*/
+
+  .checkbox {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox > span {
+    color: #777;
+    text-transform: uppercase;
+    font-size: .6rem;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+.checkbox > input {
+    height: 13px;
+    width: 13px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline: none;
+    border: 1px solid gray;
+    transition-duration: 0.3s;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+
+.checkbox > input:checked {
+    border: 1px solid #D9A441;
+    background-color: #D9A441;
+}
+
+.checkbox > input:checked + span::before {
+    content: '\2713';
+    display: block;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 3px;
+    top: 1px;
+}
+
+.checkbox > input:active {
+    border: 2px solid black;
+}

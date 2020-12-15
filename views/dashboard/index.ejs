@@ -1,0 +1,249 @@
+<%- include('../shared/dashboard/header') -%>
+<section id="ticker-row">
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"
+            async>
+                {
+                    "symbols": [
+                        {
+                            "description": "SPDR S&P 500 ETF TRUST",
+                            "proName": "AMEX:SPY"
+                        },
+                        {
+                            "description": "NASDAQ INC",
+                            "proName": "NASDAQ:NDAQ"
+                        },
+                        {
+                            "description": "CRUDE OIL",
+                            "proName": "TVC:USOIL"
+                        },
+                        {
+                            "description": "BITCOIN",
+                            "proName": "BTC"
+                        }
+                    ],
+                        "colorTheme": "light",
+                            "isTransparent": false,
+                                "locale": "en"
+                }
+            </script>
+    </div>
+</section>
+<main id="bots-section">
+  <section class="mid-large-cap">
+    <h2>Mid-Large Cap</h2>
+    <div class="bubble" style="text-transform: uppercase; background: none;">
+      <p>time</p>
+      <p>ticker</p>
+      <p>date</p>
+      <p>price</p>
+    </div>
+    <div class="mid-large-data">
+      <div class="bubble">
+        <p class="time">11:38AM</p>
+        <p class="ticker">CLSR</p>
+        <p class="date">12/06</p>
+        <p class="price">$4.62</p>
+      </div>
+      <div class="bubble">
+        <p class="time">11:38AM</p>
+        <p class="ticker">CLSR</p>
+        <p class="date">12/06</p>
+        <p class="price">$4.62</p>
+      </div>
+      <div class="bubble">
+        <p class="time">11:38AM</p>
+        <p class="ticker">CLSR</p>
+        <p class="date">12/06</p>
+        <p class="price">$4.62</p>
+      </div>
+      <div class="bubble">
+        <p class="time">11:38AM</p>
+        <p class="ticker">CLSR</p>
+        <p class="date">12/06</p>
+        <p class="price">$4.62</p>
+      </div>
+    </div>
+  </section>
+  <section class="small-cap">
+    <h2>Small Cap</h2>
+    <div class="bubble" style="text-transform: uppercase; background: none;">
+      <p>time</p>
+      <p>ticker</p>
+      <p>date</p>
+      <p>price</p>
+    </div>
+    <div class="small-cap-data">
+      <div class="bubble">
+        <p class="time">11:38AM</p>
+        <p class="ticker">CLSR</p>
+        <p class="date">12/06</p>
+        <p class="price">$4.62</p>
+      </div>
+      <div class="bubble">
+        <p class="time">11:38AM</p>
+        <p class="ticker">CLSR</p>
+        <p class="date">12/06</p>
+        <p class="price">$4.62</p>
+      </div>
+      <div class="bubble">
+        <p class="time">11:38AM</p>
+        <p class="ticker">CLSR</p>
+        <p class="date">12/06</p>
+        <p class="price">$4.62</p>
+      </div>
+      <div class="bubble">
+        <p class="time">11:38AM</p>
+        <p class="ticker">CLSR</p>
+        <p class="date">12/06</p>
+        <p class="price">$4.62</p>
+      </div>
+    </div>
+  </section>
+  <section class="third-cap">
+    <h2>Third Cap</h2>
+    <div class="bubble" style="text-transform: uppercase; background: none;">
+      <p>time</p>
+      <p>ticker</p>
+      <p>date</p>
+      <p>price</p>
+    </div>
+    <div class="third-cap-data">
+      <div class="bubble">
+        <p class="time">11:38AM</p>
+        <p class="ticker">CLSR</p>
+        <p class="date">12/06</p>
+        <p class="price">$4.62</p>
+      </div>
+      <div class="bubble">
+        <p class="time">11:38AM</p>
+        <p class="ticker">CLSR</p>
+        <p class="date">12/06</p>
+        <p class="price">$4.62</p>
+      </div>
+      <div class="bubble">
+        <p class="time">11:38AM</p>
+        <p class="ticker">CLSR</p>
+        <p class="date">12/06</p>
+        <p class="price">$4.62</p>
+      </div>
+      <div class="bubble">
+        <p class="time">11:38AM</p>
+        <p class="ticker">CLSR</p>
+        <p class="date">12/06</p>
+        <p class="price">$4.62</p>
+      </div>
+    </div>
+  </section>
+  <section class="option-sweeps">
+    <h2>Option Sweeps</h2>
+    <div class="sweep-bubble" style="text-transform: uppercase;">
+      <p>time</p>
+      <p>ticker</p>
+      <p>type</p>
+      <p>exp</p>
+      <p>strike</p>
+      <p>premium</p>
+      <p>total</p>
+    </div>
+    <div class="sweep-data">
+      <% optionSweepsData.forEach(function(opt) { %>
+        <!-- <h2><%= opt.time %></h2> -->
+        <div class="sweep-bubble" style="background: rgba(0, 255, 0, 0.2);">
+          <p class="time"><%= opt.time %></p>
+          <p class="ticker"><%= opt.ticker %></p>
+          <p class="type"><%= opt.type %></p>
+          <p class="expiration"><%= opt.expiry %></p>
+          <p class="strike"><%= opt.strike %></p>
+          <p class="premium"><%= opt.premium %></p>
+          <p class="total">$555</p>
+        </div>
+        <% }); %>
+      <!-- <div class="sweep-bubble" style="background: rgba(0, 255, 0, 0.2);">
+        <p class="time">11:38AM</p>
+        <p class="ticker">RIOT</p>
+        <p class="type">CALL</p>
+        <p class="expiration">03/19/21</p>
+        <p class="strike">$4</p>
+        <p class="premium">$5.55</p>
+        <p class="total">$555</p>
+      </div> -->
+      <!-- <div class="sweep-bubble" style="background: rgba(255, 0, 0, 0.2);">
+        <p class="time">11:38AM</p>
+        <p class="ticker">RIOT</p>
+        <p class="type">PUT</p>
+        <p class="expiration">03/19/21</p>
+        <p class="strike">$4</p>
+        <p class="premium">$5.55</p>
+        <p class="total">$555</p>
+      </div> -->
+    </div>
+  </section>
+  <section class="dark-pool-prints" style="background: rgb(0, 0, 60);">
+    <h2 style="color: white;">Dark Pool Prints</h2>
+    <div class="dp-bubble" style="text-transform: uppercase; background: none; color: white;">
+      <p>time</p>
+      <p>ticker</p>
+      <p>qty</p>
+      <p>price</p>
+      <p>date</p>
+    </div>
+    <div class="dp-data">
+      <div class="dp-bubble"">
+        <p class="time">11:38AM</p>
+        <p class="ticker">RIOT</p>
+        <p class="qty">1.2M</p>
+        <p class="price">$100</p>
+        <p class="date">03/19/20</p>
+      </div>
+      <div class="dp-bubble"">
+        <p class="time">11:38AM</p>
+        <p class="ticker">RIOT</p>
+        <p class="qty">1.2M</p>
+        <p class="price">$100</p>
+        <p class="date">03/19/20</p>
+      </div>
+      <div class="dp-bubble"">
+        <p class="time">11:38AM</p>
+        <p class="ticker">RIOT</p>
+        <p class="qty">1.2M</p>
+        <p class="price">$100</p>
+        <p class="date">03/19/20</p>
+      </div>
+      <div class="dp-bubble"">
+        <p class="time">11:38AM</p>
+        <p class="ticker">RIOT</p>
+        <p class="qty">1.2M</p>
+        <p class="price">$100</p>
+        <p class="date">03/19/20</p>
+      </div>
+      <div class="dp-bubble"">
+        <p class="time">11:38AM</p>
+        <p class="ticker">RIOT</p>
+        <p class="qty">1.2M</p>
+        <p class="price">$100</p>
+        <p class="date">03/19/20</p>
+      </div>
+      <div class="dp-bubble"">
+        <p class="time">11:38AM</p>
+        <p class="ticker">RIOT</p>
+        <p class="qty">1.2M</p>
+        <p class="price">$100</p>
+        <p class="date">03/19/20</p>
+      </div>
+      <div class="dp-bubble"">
+        <p class="time">11:38AM</p>
+        <p class="ticker">RIOT</p>
+        <p class="qty">1.2M</p>
+        <p class="price">$100</p>
+        <p class="date">03/19/20</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class="midas-chat">
+    <h2>Midas Chat</h2>
+  </section>
+</main>
+<%- include('../shared/dashboard/footer') -%>

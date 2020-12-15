@@ -1,0 +1,36 @@
+<%- include('../shared/home/header') -%>
+<div class="loginbox">
+    <img src="assets/logos/midas-logo.png" class="logo" />
+    <form action="/register" method="post">
+        <h2>Sign up below!</h2>
+
+        <!--<p>Username</p>-->
+        <input type="username" id="username" name="username" placeholder="Username" required />
+        <label for="username" class="message" id="username-message"></label>
+
+        <!--<p>Email</p>-->
+        <input type="email" id="email" name="email" placeholder="Email Address" required />
+        <label for="username" class="message" id="email-message"></label>
+
+        <!--<p>Password</p>-->
+        <input type="password" id="password" name="password" placeholder="Password" required />
+        <label for="password" class="message" id="password-message"></label>
+
+        <!--<p>Confirm Password</p>-->
+        <input type="password" id="password-confirm" name="cpassword" placeholder="Confirm Password" required />
+        <label for="password-confirm" class="message" id="password-confirm-message"></label>
+
+        <!-- TOS Checkbox -->
+        <label style="color: lightgray" for="tos-checkbox" name="tos-checkbox">
+            <input type="checkbox" id="tos-checkbox" name="tos-checkbox" required />
+            <span class="terms">I agree to the Midas Circle <a href="#">Terms of Service</a></span>
+        </label>
+        <%- include('../shared/home/flash-messages') -%>
+        <button type="submit" class="button center golden" id="signup">
+            Sign up
+        </button>
+    </form>
+    <button href="signupDiscord" class="button center discordy">Sign up by Discord</button>
+    <span class="acct" style="color: lightgray">Already have an account?<a href="/login"> Login here!</a></span>
+</div>
+<%- include('../shared/home/footer') -%>

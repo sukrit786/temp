@@ -1,0 +1,87 @@
+<%- include('../shared/dashboard/header') -%>
+<main id="account-settings">
+    <div class="container">
+        <div class="leftbox">
+            <nav class="settings">
+                <a onclick="tabs(0)" id="profile" class="active tab"><i class="fa fa-user"></i></a>
+                <a onclick="tabs(1)" id="payment" class="tab"><i class="fa fa-credit-card"></i></a>
+                <a onclick="tabs(2)" id="subscription" class="tab"><i class="fa fa-tv"></i></a>
+                <a onclick="tabs(3)" id="privacy" class="tab"><i class="fa fa-tasks"></i></a>
+                <a onclick="tabs(4)" id="settings" class="tab"><i class="fa fa-cog"></i></a>
+            </nav>
+        </div>
+        <div class="rightbox">
+            <div class="profile tabShow">
+                <form action="#">
+                    <h1>Personal Info</h1>
+                    <input type="text" id="name" name="name" value=""><br>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="username" name="username" value=""><br>
+                    <label for="username">Username</label><br>
+                    <input type="email" id="email" name="email" value=""><br>
+                    <label for="email">Email</label><br>
+                    <input type="password" id="password" name="password" value=""><br>
+                    <label for="password">Password</label><br>
+                    <button type="submit" class="btn-update btn">Update</button>
+                </form>
+            </div>
+
+            <div class="payment tabShow">
+                <form action="#">
+                    <h1>Payment Info</h1>
+                    <input type="text" id="fullname" name="fullname" value=""><br>
+                    <label for="name">Full Name</label><br>
+                    <input type="text" id="billing-address" name="billing-address" value=""><br>
+                    <label for="billing-address">Billing Address</label><br>
+                    <input type="text" id="zipcode" name="zipcode" value=""><br>
+                    <label for="zipcode">Zip</label><br>
+                    <input type="date" id="billing-date" name="billing-date"><br>
+                    <label for="billing-date">Billing Date</label><br>
+                    <input type="text" id="gift" name="gift" value=""><br>
+                    <label for="gift">Redeem Gift Code</label><br>
+                    <button type="submit" class="btn-update btn">Update</button>
+                </form>
+            </div>
+
+            <div class="subscription tabShow">
+                <form action="#">
+                    <h1>Subscription Info</h1>
+                    <input type="text" id="pay-date" name="pay-date" value=""><br>
+                    <label for="pay-date">Payment Date</label><br>
+                    <input type="text" id="plan" name="plan" value=""><br>
+                    <label for="plan">Subscription Type</label><br>
+                    <input type="text" id="cost" name="cost" value=""><br>
+                    <label for="zipcode">Cost</label><br>
+                    <button type="submit" class="btn-update btn">Update</button>
+                </form>
+            </div>
+
+            <div class="privacy tabShow">
+                <form action="#">
+                    <h1>Privacy Settings</h1>
+                    <label for="email-notifications" class="checkbox">
+                        <input type="checkbox" id="email-notifications" name="email-notifications" value="subscribe"
+                            checked>
+                        <span>Email Notifications?</span>
+                    </label><br>
+                    <label for="personal-ads" class="checkbox">
+                        <input type="checkbox" id="personal-ads" name="personal-ads" value="subscribe" checked>
+                        <span>Personalize Ads?</span>
+                    </label><br>
+                    <button type="submit" class="btn-update btn">Update</button>
+                </form>
+            </div>
+
+            <div class="settings tabShow">
+                <h1>Manage Account</h1>
+                <a href="#"><button class="btn">Upgrade Subscription</button></a><br>
+                <a href="#"><button class="btn">Cancel Subscription</button></a><br>
+            </div>
+
+        </div>
+    </div>
+    <!-- partial -->
+
+    </section>
+</main>
+<%- include('../shared/dashboard/footer') -%>

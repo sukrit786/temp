@@ -1,0 +1,254 @@
+@import 'styles/nav.css';
+
+html, body, pre, code, kbd, samp, input, button, select, optgroup, textarea, .tooltip, .popover {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+body {
+    background-color: #ededed;
+}
+
+#bots-section {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.search {
+    max-width: 1854px;
+    margin: 0 auto;
+}
+
+#ticker-row {
+    max-width: 1760px;
+    margin: 0 auto;
+}
+
+img.logo {
+    max-height: 30px;
+}
+
+.search {
+    margin-top: 20px;
+}
+
+form input {
+    min-width: 95%;
+    max-width: 95%;
+    position: relative;
+    left: 8px;
+}
+
+form img {
+    max-height: 15px;
+    position: relative;
+    left: -25px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.row {
+    margin-left: 9px;
+    max-width: 99%;
+}
+
+.col, [class*="col-"] {
+    margin-bottom: 30px;
+    resize: both;
+    overflow: auto;
+}
+
+.dark-pool, .option-sweeps, .bot-container {
+    background-color: #fdfdfd;
+    border-radius: 15px;
+    padding: 20px;
+    height: 100%;
+}
+
+.btn {
+    background-color: #D9A441;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 1px;
+    border: none;
+    padding: 7px 20px;
+}
+
+.btn:hover {
+    background-color: #F2CA52;
+    color: white;
+}
+
+.btn:active {
+    background-color: #D9A441;
+    color: white;
+}
+
+.bar {
+    background: rgb(242,202,82);
+    background: linear-gradient(90deg, rgba(242,202,82,1) 0%, rgba(217,164,65,1) 35%, rgba(191,117,52,1) 100%);
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    padding: 3px 0px;
+    margin-bottom: 15px;
+}
+
+.long-term {
+    grid-area: one;
+}
+
+.overview {
+    grid-area: two;
+}
+
+.short-term {
+    grid-area: three;
+}
+
+#ticker-row {
+    text-align: center;
+    padding-bottom: 18px;
+    width: 100%;
+}
+
+#bots-section {
+    padding: 0px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "one two three";
+    gap: 20px;
+}
+
+#bots-section > section {
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 50vh;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #bots-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "two two"
+        "one three";
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+
+    #bots-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "one"
+        "two"
+        "three";
+    }
+
+}
+
+.mid-large-data {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+.bubble {
+    display: flex;
+    justify-content: space-evenly;
+    background: #F2B705;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.bubble:nth-child(odd) {
+    background: #D9A441;
+}
+
+.bubble > p {
+    position: relative;
+    top:8px;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.sweep-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.sweep-bubble {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.sweep-bubble > p {
+    position: relative;
+    top:8px;
+    font-size: .8rem;
+    text-align: center;
+    width: 20%;
+}
+
+@media only screen and (max-width : 767px) {
+
+    .nav-item:first-of-type {
+        margin-top: 10px;
+    }
+
+    .nav-item{
+        text-align: center;
+        padding: 10px 0px;
+        background: #333333;
+    }
+
+    .navbar {
+        padding-bottom: 13px;
+    }
+
+    .row {
+        margin-left: 0px;
+    }
+
+    .sweep-bubble > p {
+        font-size: .6rem;
+    }
+
+    #piechart {
+        width: max-content;
+        transform: scale(.7);
+    }
+
+}
+
+.overview {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#piechart {
+    width: max-content;
+    position: relative;
+    left: 30px;
+}

@@ -1,0 +1,24 @@
+<%- include('../shared/home/header') -%>
+<div class="loginbox">
+    <img src="assets/logos/midas-logo.png" class="logo" />
+    <form method="post" action="/login">
+        <h2>Midas Circle</h2>
+
+        <input type="email" id="email" name="email" placeholder="Email Address" required />
+        <label for="email" class="message" id="email-message"></label>
+
+        <input type="password" id="password" name="password" placeholder="Password" required />
+        <label for="password" class="message" id="password-message"></label>
+        <%- include('../shared/home/flash-messages') -%>
+        <button type="submit" class="button center golden" id="login" style="margin-top: 20px">
+            Login
+        </button>
+    </form>
+    <button href="" id="loginDiscord" class="button center discordy">
+        Login by Discord
+    </button>
+    <span class="acct" style="color: lightgray">Forgot password?<a href=""> Reset</a></span><br />
+    <span class="acct" style="color: lightgray">Not a member?<a href="/register"> Register here!</a></span>
+</div>
+
+<%- include('../shared/home/footer') -%>
